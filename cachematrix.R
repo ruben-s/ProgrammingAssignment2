@@ -2,6 +2,8 @@
 ## wich encapsulates a matrix
 ## with a seperate function the inverse of this matrix is calculated or retrieved if it was
 ## calculated and stored earlier
+## no checking code or error checking code was added -> it is assumed that only square matrices
+## will be passed as arguments, and that these matrices have actuall inverses
 
 ## The makeCacheMatrix function 
 #
@@ -28,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
   inv_matrix <- NULL
   
 # the set() function to re-initialise the encapsulated matrix
-# howver the function does not verify that the argument passed is
+# however the function does not verify that the argument passed is
 # a) actually a matrix
 # b) is a square matrix (non-square matrices do not have an inverse)
   set <- function(y) {
@@ -54,8 +56,6 @@ makeCacheMatrix <- function(x = matrix()) {
        setinv = setinv,
        getinv = getinv)
 }
-
-
 
 ## The cacheSolve function retrieves the inverse of the makeCacheMatrix object
 #
