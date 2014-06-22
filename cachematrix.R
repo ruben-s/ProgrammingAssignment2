@@ -2,8 +2,9 @@
 ## wich encapsulates a matrix
 ## with a seperate function the inverse of this matrix is calculated or retrieved if it was
 ## calculated and stored earlier
-## no checking code or error checking code was added -> it is assumed that only square matrices
-## will be passed as arguments, and that these matrices have actuall inverses
+## no argument validation code or error checking code was added 
+## -> it is assumed that only square matrices will be passed as arguments,
+## and that these matrices actually have an inverse
 
 ## The makeCacheMatrix function 
 #
