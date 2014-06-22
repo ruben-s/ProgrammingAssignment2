@@ -1,4 +1,7 @@
-## 
+## the below functions make it possible to create a special object makeCacheMatrix 
+## wich encapsulates a matrix
+## with a seperate function the inverse of this matrix is calculated or retrieved if it was
+## calculated and stored earlier
 
 ## The makeCacheMatrix function 
 #
