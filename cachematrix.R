@@ -64,6 +64,7 @@ cacheSolve <- function(x, ...) {
 # fetch the inv_matrix from the passed makeCacheMatrix object
   inv_matrix <- x$getinv()
 # if the fetched inv_matrix is defined (i.e. it is not null) then return this fetched matrix
+# and end the function
   if(!is.null(inv_matrix)) {
     message("getting cached data")
     return(inv_matrix)
